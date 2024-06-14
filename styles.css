@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.thumbnail img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+#questionsList {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}

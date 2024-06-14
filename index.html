@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de Problemas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Resolución de Problemas</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#problemas">Problemas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section id="inicio">
+            <h2 class="animated-text text-center mb-4">Bienvenidos a la Sección de Resolución de Problemas</h2>
+            <p class="text-center">Explora y resuelve problemas interesantes mientras disfrutas de animaciones y movimientos interactivos.</p>
+        </section>
+        <section id="problemas" class="my-5">
+            <h2 class="animated-text text-center mb-4">Problemas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card thumbnail">
+                        <img src="thumbnail1.jpg" class="card-img-top" alt="Problema 1">
+                        <div class="card-body">
+                            <p class="card-text">Problema 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card thumbnail">
+                        <img src="thumbnail2.jpg" class="card-img-top" alt="Problema 2">
+                        <div class="card-body">
+                            <p class="card-text">Problema 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card thumbnail">
+                        <img src="thumbnail3.jpg" class="card-img-top" alt="Problema 3">
+                        <div class="card-body">
+                            <p class="card-text">Problema 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="preguntas" class="my-5">
+            <h2 class="animated-text text-center mb-4">Preguntas</h2>
+            <p class="text-center">Deja tus preguntas y obtén respuestas:</p>
+            <form id="questionForm" class="mb-4">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pregunta">Pregunta:</label>
+                    <textarea class="form-control" id="pregunta" name="pregunta" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+            <div id="questionsList" class="border p-3">
+                <h3>Preguntas Recientes:</h3>
+                <!-- Preguntas serán agregadas aquí -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Resolución de Problemas. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
